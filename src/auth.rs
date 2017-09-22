@@ -1,6 +1,5 @@
 use hyper::header::{Headers, Authorization, Bearer};
 use std::fs::File;
-use std::io::prelude::*;
 use std::io::Result;
 
 pub fn set_auth(headers: &mut Headers, apikey_location: &str) -> Result<()> {
